@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+</head>
+<style>
+    body{
+     background-color: lavenderblush;
+     font-family: cursive;
+     color: purple;
+    }
+   .div1{
+    border-radius: 30px;
+    box-shadow: 1px 2px 2px 2px black;
+    height: 200px;
+    width: 400px;
+    background-color: lavender;
+    margin-top: 130px;
+    margin-left: 470px;
+       }
+    input{
+        padding: 8px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+   <center><h1 style="margin-top: 20px; text-shadow: 2px 2px black; ">WELCOME TO LOGIN PAGE OF DAILY DOSSIER</h1></center> 
+ <div class="div1">
+    <form action="/login" method="POST">
+
+        <label style="margin-left: 20px; margin-top: 20px; font-family: 'lato sans-serif';">EMAIL</label> <input type="email" name="email" required="required" style="margin-left: 20px; margin-top: 20px;"><br>
+        <label style="margin-left: 20px; margin-top: 20px; font-family: 'lato sans-serif';">PASSWORD</label> <input type="password" name='password' required="required" style="margin-left: 20px; margin-top: 20px;"><br>
+        <input type="submit" name='submit' style="margin-left: 80px; margin-top: 20px; width: 90px;">
+        <a href="/signup">New User?</a>
+
+    </form>
+</div>
+</body>
+</html>

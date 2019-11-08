@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Enter in diary</title>
+</head>
+<style>
+    body{
+     background-color: lavenderblush;
+     font-family: Lato, sans-serif;
+    }
+   .div1{
+    border-radius: 30px;
+    box-shadow: 3px 3px 2px;
+    height: 110px;
+    width: 400px;
+    background-color: lavender;
+    margin-top: 130px;
+    margin-left: 470px;
+       }
+    input{
+        padding: 8px;
+        border-radius: 10px;
+    }
+</style>
+<body>
+ <div class="div1">
+    <form action="/entry" method="POST">
+        <p align=center>
+            <input type="text" name="content" placeholder="enter the memory" style="margin-left: 20px; margin-top: 20px;">
+            <input type="submit" name='submit' style="margin-left: 60px; margin-top: 20px; width: 90px;">
+
+            <a href="/logout" style=" margin-left: 250px; font-family: cursive; text-decoration: none; color: red;">Logout</a>
+        </p>
+    </form>
+    </div>
+</body>
+</html>
